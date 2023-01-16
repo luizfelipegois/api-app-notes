@@ -4,7 +4,8 @@
   "description": "API structure with CRUD of users, annotations and todo.",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,15 @@
   },
   "homepage": "https://github.com/luizfelipegois/api-app-notes#readme",
   "devDependencies": {
+    "cors": "^2.8.5",
     "eslint": "^8.32.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.27.4"
+    "eslint-plugin-import": "^2.27.4",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.3"
   }
 }
